@@ -17,13 +17,13 @@
 	<body>
 
     <script>
-    var imgs = ["1.png", "2.png"];
+    var imgs = ["1.png", "3.png", "4.png", "2.png", "5.png", "6.png"];
     var r;
     r = 0;
     function goNext() {
       console.log(r);
       r = r + 1
-      if (r == 2) {
+      if (r == 6) {
         r = 0;
       }
       document.getElementById("face").src = imgs[r];
@@ -31,7 +31,7 @@
     </script>
 
 
-    <font size="36"> Happy Birthday! Click your face</font>
+    <font size="36"> Happy Birthday! Click your face!</font>
     <br>
     <img src="a.gif" height="600" width="600" class="back">
     <img id="face" src="1.png" height="220" width="200" class="top" onclick="goNext()">
